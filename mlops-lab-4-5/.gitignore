@@ -1,0 +1,12 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+# MLflow
+mlruns/
+# DVC local cache and local remote
+.dvc/cache/
+dvc-storage/
+# Keep generated models out of Git; use MLflow/DVC as appropriate
+models/*
+!models/.gitkeep

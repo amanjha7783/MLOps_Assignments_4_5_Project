@@ -1,0 +1,16 @@
+project: MLOps-Lab-4-5-House-Prices
+dataset: data/dataset.csv
+target: price_lakh
+features:
+  - area_sqft
+  - bedrooms
+  - age_years
+  - distance_km
+  - amenities_score
+split:
+  test_size: 0.2
+  random_state: 42
+selection:
+  primary_metric: rmse
+  direction: minimize
+  acceptance_rule: "Choose lowest held-out RMSE; validate data quality and operational constraints before production."
